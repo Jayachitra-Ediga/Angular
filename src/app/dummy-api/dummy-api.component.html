@@ -1,0 +1,14 @@
+<p>dummy-api works!</p>
+<!-- <h2>{{errMsg}}</h2> -->
+<div class="cards">
+  <ul *ngFor="let data of employeeData" class="styling">
+    <li>Name: {{ data.firstName }}</li>
+    <li>Email: {{ data.email }}</li>
+
+    <button type="text" (click)="deleteEmployeeData(data.id)">Delete</button>
+  </ul>
+ </div>
+  <!-- <li>{{formData}}</li> -->
+<!-- <label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem> -->
+<!-- <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button> -->

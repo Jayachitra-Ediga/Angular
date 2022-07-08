@@ -1,0 +1,49 @@
+<p>reactive-form works!</p>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <label for="first-name">First-name: </label>
+    <input type="text" id="name" formControlName="firstName">
+    <br>
+    <br>
+    <label for="last-name">Last-name: </label>
+    <input for="last-name" formControlName="lastName">
+    <br>
+    <br>
+    <label for="email">Email: </label>
+    <input for="email" formControlName="email">
+    <br>
+    <br>
+    <!-- <div formGroupName="address">
+        <h2>Address</h2>
+      
+        <label for="street">Street: </label>
+        <input id="street" type="text" formControlName="street">
+        <br>
+        <br>
+        <label for="city">City: </label>
+        <input id="city" type="text" formControlName="city">
+        <br>
+        <br>
+        <label for="state">State: </label>
+        <input id="state" type="text" formControlName="state">
+        <br>
+        <br>
+        <label for="zip">Zip Code: </label>
+        <input id="zip" type="text" formControlName="zip">
+      </div> -->
+      <br>
+    <br>
+    
+    <button type="submit" [disabled]="!employeeForm.valid">Submit</button>
+    <!-- <button type="button"  (click)="updateFrom()">Update Profile</button> -->
+    <button type="button"  (click)="updateEmployeeData()">Update</button>
+
+
+    <!-- <p>Value: {{ name.value }}</p> -->
+    <!-- <button type="button" (click)="updateName()">Update Name</button> -->
+
+</form>
+<!-- <app-dummy-api [formData]="msg" (newItemEvent)="addItem($event)"></app-dummy-api> -->
+<!-- <ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul> -->
+
