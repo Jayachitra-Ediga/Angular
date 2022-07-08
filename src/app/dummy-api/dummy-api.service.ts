@@ -38,8 +38,7 @@ export class DummyApiService {
     
    }
    updateEmplyoyeeData(data:employeeData):Observable<any>{
-     debugger
-     let   url="http://localhost:3000/employees/1";
+     let   url="http://localhost:3000/employees/2";
      console.log(data)
 
      return this.httpClient.put(url,data)
