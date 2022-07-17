@@ -7,7 +7,9 @@ import { HomeComponent } from './Home/home/home.component';
 import { DummyAPIComponent } from './dummy-api/dummy-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TeplateFormComponent } from './teplate-form/teplate-form.component';
+import { MustMatchDirective } from './custome-validators/must-match.directive';
 
 
 @NgModule({
@@ -15,13 +17,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     DummyAPIComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TeplateFormComponent,
+    MustMatchDirective
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
