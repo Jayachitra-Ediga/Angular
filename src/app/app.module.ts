@@ -10,6 +10,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TeplateFormComponent } from './teplate-form/teplate-form.component';
 import { MustMatchDirective } from './custome-validators/must-match.directive';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MustMatchDirective } from './custome-validators/must-match.directive';
     DummyAPIComponent,
     ReactiveFormComponent,
     TeplateFormComponent,
-    MustMatchDirective
+    MustMatchDirective,
+    DepartmentDetailComponent
 
   ],
   imports: [

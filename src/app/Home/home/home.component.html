@@ -1,1 +1,8 @@
 <p>home works!</p>
+<h3>Department List</h3>
+<ul class="list-group" style="width: 30%">
+    <li (click)="onSelect(department)" class="list-group-item" *ngFor="let department of departments"
+    [class.disabled]="isSelected(department)">
+        <span>{{department.id}}</span> {{department.name}}
+    </li>
+</ul>
